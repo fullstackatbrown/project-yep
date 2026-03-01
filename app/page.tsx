@@ -1,8 +1,35 @@
+'use client'
 import Image from "next/image";
+import Footer from "./footer";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./accordion/accordion";
+import React, { useState } from 'react'
+
+type AccordionProps = {
+    id: string;
+    title: string;
+    description: string;
+}
+const list: AccordionProps[] = [
+    {
+        id: "1",
+        title: "Title 1",
+        description: "Description 1"
+    },
+    {
+        id: "2",
+        title: "Title 2",
+        description: "Description 2"
+    },
+    {
+        id: "3",
+        title: "Title 3",
+        description: "Description 3"
+    },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
       <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
@@ -59,7 +86,18 @@ export default function Home() {
             Documentation
           </a>
         </div>
+        <Accordion>
+                {
+                    list.map( (item) => (
+                        <AccordionItem id={item.id}>
+                            <AccordionTrigger> { item.title }</AccordionTrigger>
+                            <AccordionContent>{item.description}</AccordionContent>
+                        </AccordionItem>
+                    ))
+                }
+            </Accordion>
       </main>
+      <Footer/>
     </div>
   );
 }
