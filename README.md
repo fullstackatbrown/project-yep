@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Mailgun Contact Setup
+
+1. Copy env file:
+
+```bash
+cp .env.example .env.local
+```
+
+2. Set `API_KEY` in `.env.local`.
+3. Optionally override `MAILGUN_DOMAIN`, `MAILGUN_FROM`, and `MAILGUN_TO`.
+4. Run `npm run dev` and submit the form on `/`.
+
 ## Getting Started
 
 First, run the development server:
