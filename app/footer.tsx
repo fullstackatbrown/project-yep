@@ -4,7 +4,7 @@ const Footer = () => {
     return (
             <footer className='flex w-full flex-col items-center bg-white p-20'>
                 <div className='container w-full' style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'space-evenly'}}>
-                    <div className='column' style={{color: 'black'}}>
+                    <div className='column' style={{color: 'black', maxWidth: '300px'}}>
                         <p>YEP!@Brown</p>
                         <header style={{color: 'black', fontSize: '30px', fontWeight: 'bold'}}>
                             Empowering Student Entrepreneurs
@@ -12,13 +12,14 @@ const Footer = () => {
                     </div>
 
                      <div style={{borderRight: '1px solid black'}}></div>
-                    <div className='column' style={{color: 'black'}}>
+                    <div className='column' style={{color: 'black', maxWidth: '400px'}}>
                         <p>(401) 863-1000</p>
                         <p>yep@brown.edu</p>
                         <p>Nelson Center For Entrepreneurship, Euclid Avenue, Providence, RI, USA</p>
                         
-                        <div className='container' style={{display: 'flex', gap: '30px'}}>
-                            <Image
+                        <div className='container' style={{display: 'flex', gap: '20px', marginTop: '20px'}}>
+                            <a href="https://www.instagram.com/yep.providence/" target="_blank">
+                                <Image
                                    className=""
                                    src="/insta.svg"
                                    alt="Instagram"
@@ -26,6 +27,7 @@ const Footer = () => {
                                    height={40}
                                    priority
                                  />
+                            </a>
                             <Image
                                    className=""
                                    src="/linkedin.png"

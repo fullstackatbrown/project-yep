@@ -24,3 +24,44 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #0b0968;
+  color: #ffe96c; 
+  font-size: 25px;
+  font-family: Verdana;
+  text-transform: uppercase;
+  
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 1rem;
+
+  border-radius: 90%;
+}
+
+.accordion-content {
+  background-color: #0b0968;
+  color: white;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 18px;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+}

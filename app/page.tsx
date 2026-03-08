@@ -1,36 +1,38 @@
 'use client'
 import Image from "next/image";
 import Footer from "./footer";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./accordion/accordion";
+import Accordion from "./accordion";
 import React, { useState } from 'react'
 
-type AccordionProps = {
-    id: string;
-    title: string;
-    description: string;
-}
-const list: AccordionProps[] = [
+const accordionData = [
     {
-        id: "1",
-        title: "Title 1",
-        description: "Description 1"
+      title: 'Section 1',
+      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
+      laborum cupiditate possimus labore, hic temporibus velit dicta earum
+      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
+      voluptatem.`
     },
     {
-        id: "2",
-        title: "Title 2",
-        description: "Description 2"
+      title: 'Section 2',
+      content: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia veniam
+      reprehenderit nam assumenda voluptatem ut. Ipsum eius dicta, officiis
+      quaerat iure quos dolorum accusantium ducimus in illum vero commodi
+      pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
+      quidem maiores doloremque est numquam praesentium eos voluptatem amet!
+      Repudiandae, mollitia id reprehenderit a ab odit!`
     },
     {
-        id: "3",
-        title: "Title 3",
-        description: "Description 3"
-    },
-];
+      title: 'Section 3',
+      content: `Sapiente expedita hic obcaecati, laboriosam similique omnis architecto ducimus magnam accusantium corrupti
+      quam sint dolore pariatur perspiciatis, necessitatibus rem vel dignissimos
+      dolor ut sequi minus iste? Quas?`
+    }
+  ];
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+      <main className=" min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -86,16 +88,9 @@ export default function Home() {
             Documentation
           </a>
         </div>
-        <Accordion>
-                {
-                    list.map( (item) => (
-                        <AccordionItem id={item.id}>
-                            <AccordionTrigger> { item.title }</AccordionTrigger>
-                            <AccordionContent>{item.description}</AccordionContent>
-                        </AccordionItem>
-                    ))
-                }
-            </Accordion>
+        {accordionData.map(({ title, content }) => (
+          <Accordion title={title} content={content} key={title} />
+        ))}
       </main>
       <Footer/>
     </div>
