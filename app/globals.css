@@ -25,11 +25,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.accordion {
-  max-width: 600px;
-  margin: 2rem auto;
-}
-
 .accordion-title {
   display: flex;
   flex-direction: row;
@@ -38,22 +33,32 @@ body {
   background-color: #0b0968;
   color: #ffe96c; 
   font-size: 25px;
-  font-family: Verdana;
+  font-family: Geneva;
   text-transform: uppercase;
-  
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .accordion-title,
 .accordion-content {
   padding: 1rem;
-
-  border-radius: 90%;
 }
 
 .accordion-content {
   background-color: #0b0968;
   color: white;
   font-size: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.accordion-content-container {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 700px) {

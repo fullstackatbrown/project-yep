@@ -6,11 +6,10 @@ import React, { useState } from 'react'
 
 const accordionData = [
     {
-      title: 'Section 1',
-      content: `Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis sapiente
-      laborum cupiditate possimus labore, hic temporibus velit dicta earum
-      suscipit commodi eum enim atque at? Et perspiciatis dolore iure
-      voluptatem.`
+      title: 'Who we are',
+      content: `YEP!@Brown is an entirely free entrepreneurship program for local high school students in college towns. 
+      The program is lead and facilitated by university students. We believe that by opening Brown’s doors to the Providence 
+      community, we will hopefully teach the entrepreneurial process to the next generation of change makers.`
     },
     {
       title: 'Section 2',
@@ -19,7 +18,7 @@ const accordionData = [
       quaerat iure quos dolorum accusantium ducimus in illum vero commodi
       pariatur? Impedit autem esse nostrum quasi, fugiat a aut error cumque
       quidem maiores doloremque est numquam praesentium eos voluptatem amet!
-      Repudiandae, mollitia id reprehenderit a ab odit!`
+      Repudiandae, mollitia id reprehenderit a ab odit! `
     },
     {
       title: 'Section 3',
