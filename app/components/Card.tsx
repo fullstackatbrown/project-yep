@@ -10,8 +10,8 @@ export default function Card({ artwork, onClick }: CardProps) {
   return (
     <button
       onClick={() => onClick(artwork)}
-      className="group relative w-full overflow-hidden rounded-2xl cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow-400"
-      style={{ aspectRatio: "357 / 604", maxHeight: "65vh" }}
+      className="group relative w-full cursor-pointer overflow-hidden rounded-[18px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0f0f2d]"
+      style={{ aspectRatio: "0.62" }}
       aria-label={artwork.title}
     >
       {/* Full-bleed image */}
@@ -20,19 +20,19 @@ export default function Card({ artwork, onClick }: CardProps) {
         alt={artwork.title}
         fill
         sizes="(max-width: 600px) 100vw, 33vw"
-        className="object-cover transition-transform duration-500 group-hover:scale-105"
+        className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
         quality={100}
       />
 
       {/* Bottom gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
       {/* Text overlay */}
-      <div className="absolute bottom-0 left-0 right-0 p-5 text-left">
-        <h3 className="text-2xl font-black text-white leading-tight">
+      <div className="absolute bottom-0 left-0 right-0 p-4 text-left sm:p-5">
+        <h3 className="font-viga text-[2rem] font-black leading-[0.95] text-white sm:text-[2.15rem]">
           {artwork.title}
         </h3>
-        <p className="mt-1 text-sm text-white/80 leading-snug">
+        <p className="mt-1 text-sm leading-snug text-white/85">
           {artwork.description}
         </p>
       </div>

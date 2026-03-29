@@ -62,7 +62,7 @@ export default function Modal({ artwork, onClose }: ModalProps) {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-5">
-            <h3 className="text-xl font-black text-white leading-tight">
+            <h3 className="font-viga text-xl font-black leading-tight text-white">
               {artwork.title}
             </h3>
           </div>
@@ -70,10 +70,10 @@ export default function Modal({ artwork, onClose }: ModalProps) {
 
         {/* Content panel */}
         <div className="flex flex-col justify-start gap-4 p-8">
-          <p className="text-xs font-semibold uppercase tracking-widest text-orange-500">
+          <p className="font-viga text-xs font-semibold uppercase tracking-widest text-orange-500">
             {artwork.years}
           </p>
-          <h2 className="text-2xl font-black uppercase leading-tight tracking-tight text-white">
+          <h2 className="font-viga text-2xl font-black uppercase leading-tight tracking-tight text-white">
             {artwork.title}
           </h2>
           <p className="text-sm leading-relaxed text-zinc-400">
@@ -85,7 +85,7 @@ export default function Modal({ artwork, onClose }: ModalProps) {
             )}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-2 inline-flex items-center gap-1.5 self-start rounded-full bg-white px-4 py-2 text-xs font-semibold text-zinc-900 transition hover:bg-zinc-200"
+            className="font-viga mt-2 inline-flex items-center gap-1.5 self-start rounded-full bg-white px-4 py-2 text-xs font-semibold text-zinc-900 transition hover:bg-zinc-200"
           >
             Learn more ↗
           </a>

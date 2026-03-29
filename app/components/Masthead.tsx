@@ -59,12 +59,12 @@ export default function Masthead({
 
       {/* Content */}
       <div className="absolute bottom-0 left-0 right-0 p-10 sm:p-16">
-        <h1 className="text-5xl font-black text-white sm:text-7xl">
+        <h1 className="font-viga text-5xl font-black text-white sm:text-7xl">
           {heading}
         </h1>
         <a
           href={ctaHref}
-          className="mt-6 inline-block rounded-full bg-[#FFDE7C] px-6 py-3 text-sm font-bold uppercase tracking-widest text-[#0f0f2d] transition hover:bg-[#f5d060]"
+          className="font-viga mt-6 inline-block rounded-full bg-[#FFDE7C] px-6 py-3 text-sm font-bold uppercase tracking-widest text-[#0f0f2d] transition hover:bg-[#f5d060]"
         >
           {ctaText}
         </a>
