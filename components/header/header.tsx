@@ -1,54 +1,34 @@
-'use client';
-
-import React, { useState } from 'react';
 import Link from 'next/link';
-import './header.css';
+import './header.css'; 
 
-const Header = () => {
-  // checking for mobile or laptop
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  // toggle menu for mobile devices
-  const toggleMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
+export default function Header() {
   return (
     <header className="site-header">
-      <div className="header-container">
+      
+      <div className="header-left-group">
+        <Link href="/" className="logo-link">
+          {/* We will style this specific class to look like the 3D box! */}
+          <div className="yep-logo">YEP!</div> 
+        </Link>
         
-        {/* 1. Logo */}
-        <div className="logo-section">
-          <Link href="/" className="yep-logo-box">
-            <span className="yep-text">YEP!</span>
-          </Link>
-        </div>
-
-        {/* 2. Navigation */}
-        <nav className={`main-nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
-          <ul className="nav-list">
-            <li><Link href="/">Home</Link></li>
-            <li><Link href="/about">About</Link></li>
-            <li><Link href="/team">Our Team</Link></li>
-            <li><Link href="/programs">Programs</Link></li>
-            <li><Link href="/apply">Apply</Link></li>
-          </ul>
+        <nav className="header-nav">
+          <Link href="/about">ABOUT</Link>
+          <Link href="/team">OUR TEAM</Link>
+          <Link href="/apply">APPLY</Link>
+          <Link href="/programs">PROGRAMS</Link>
         </nav>
-
-        {/* 3. Mobile Toggle */}
-        <button 
-          className="mobile-toggle" 
-          onClick={toggleMenu}
-          aria-label="Toggle navigation"
-        >
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
-        </button>
-
       </div>
+
+      <div className="header-right">
+        <button className="hamburger-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
     </header>
   );
-};
-
-export default Header;
+}

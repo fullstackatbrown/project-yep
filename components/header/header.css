@@ -1,148 +1,115 @@
-/* 1. Base Layout */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  
-  /* Cream background */
-  background-color: #FFFBF0; 
-  
-  /* Subtle bottom border for separation */
-  border-bottom: 1px solid rgba(0,0,0,0.05); 
-  
-  /* backdrop blur */
-  backdrop-filter: blur(10px); 
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* 2. The "YEP!" Logo */
-.yep-logo-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fef5a7f6; 
-  border: 2px solid #343333;
-  padding: 0.4rem 1rem;
-  text-decoration: none;
-  
-  /* Pop shadow */
-  box-shadow: 4px 4px 0px #3b3b3b; 
-  
-  /* Smooth transition for hover effects */
-  transition: all 0.2s ease-in-out;
-}
-
-/* Logo Interaction */
-.yep-logo-box:hover {
-  transform: translate(-1px, -1px);
-  box-shadow: 5px 5px 0px #1a1a1a;
-}
-.yep-logo-box:active {
-  transform: translate(2px, 2px); 
-  box-shadow: 1px 1px 0px #1a1a1a; 
-}
-
-.yep-text {
-  font-family: 'Arial Black', sans-serif;
-  font-weight: 900;
-  font-size: 1.5rem;
-  color: #1a1a1a;
-  letter-spacing: -0.5px;
-  font-style: italic;
-}
-
-/* 3. Navigation Links */
-.nav-list {
-  display: flex;
-  gap: 3rem; 
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  align-items: center;
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: #1a1a1a;
-  font-weight: 600; 
-  font-size: 1rem;
-  position: relative; 
-  opacity: 0.8;
-  transition: opacity 0.2s;
-}
-
-.nav-list a:hover {
-  opacity: 1;
-}
-
-/* The "sliding underline" animation */
-.nav-list a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -4px;
-  left: 0;
-  background-color: #1a1a1a;
-  transition: width 0.3s ease;
-}
-
-.nav-list a:hover::after {
-  width: 100%; /* Line grows to full width on hover */
-}
-
-/* 4. Mobile Toggle (The Hamburger) */
-.mobile-toggle {
-  display: none; /* Hidden by default on desktop */
-  background: none;
-  border: none;
-  cursor: pointer;
-  flex-direction: column;
-  gap: 6px;
-  padding: 0.5rem;
-}
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background-color: #1a1a1a;
-  border-radius: 99px; /* Rounded edges on the bars */
-  transition: all 0.3s ease;
-}
-
-/* Phones/Tablets */
-@media (max-width: 768px) {
-  .nav-list {
-    position: fixed;
+  /* --- MAIN HEADER CONTAINER --- */
+   .site-header {
+    position: absolute;
     top: 0;
-    right: -100%; 
-    width: 70%;
-    height: 100vh;
-    background-color: #FFFBF0;
-    flex-direction: column;
-    padding: 6rem 2rem;
-    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
-    transition: right 0.3s ease-in-out;
-    gap: 2rem;
-    z-index: 999;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: transparent;
+    
+    /* Flexbox Layout: Pushes left group and right group apart */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 2rem 6rem; /* Keeps hamburger pulled in from the edge */
   }
-
-  .mobile-toggle {
-    display: flex; 
-    z-index: 1000; 
+  
+  /* --- LEFT SIDE: LOGO AND NAVIGATION --- */
+  .header-left-group {
+    display: flex;
+    align-items: center;
+    gap: 5rem; /* Space between the YEP! logo and the text links */
   }
-
-  .main-nav.mobile-open .nav-list {
-    right: 0;
+  
+  /* --- THE 3D YEP! LOGO --- */
+  .logo-link {
+    text-decoration: none;
   }
+  
+/* --- THE 3D YEP! LOGO --- */
+.yep-logo {
+  background-color: #ffffff; 
+  padding: 0.2rem 0.8rem;
+  
+  /* Reduced from 6px to 3px to make it peek out less */
+  box-shadow: 3px -3px 0px #FFDE7C; 
+  
+  color: #FFDE7C; 
+  font-family: 'Arial Black', sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 900;
+  -webkit-text-stroke: 1.5px #141837; 
+  letter-spacing: 1px;
+  display: inline-block;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.yep-logo:hover {
+  /* Adjusted the hover movement to match the smaller shadow */
+  transform: translate(-1.5px, 1.5px); 
+  box-shadow: 5px -5px 0px #FFDE7C;
+}
+  
+  /* --- NAVIGATION LINKS --- */
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem; /* Space between 'ABOUT', 'OUR TEAM', etc. */
+  }
+  
+  .header-nav a {
+    color: #ffffff; 
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  }
+  
+  /* Hover effect with the underline */
+  .header-nav a:hover {
+    color: #FFDE7C; 
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px; /* Pushes the underline down so it looks clean */
+  }
+  
+  
+  /* --- HAMBURGER MENU --- */
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 50px; /* Ensures the hamburger doesn't get squished */
+  }
+  
+  .hamburger-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  .hamburger-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  /* --- MOBILE ADJUSTMENTS --- */
+  @media (max-width: 768px) {
+    .header-nav {
+      display: none; /* Hides text links on small screens */
+    }
+    .site-header {
+      padding: 1.5rem 2rem; 
+    }
+    .header-left-group {
+      gap: 0; /* Removes gap since text links are hidden */
+    }
+  }
