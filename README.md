@@ -18,6 +18,32 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+## Cosmic CMS Team Data
+
+The team page now loads data from Cosmic through `GET /api/team`.
+
+1. Create a `.env.local` file in the project root.
+2. Add your Cosmic values:
+
+```bash
+COSMIC_BUCKET_SLUG=your-bucket-slug
+COSMIC_READ_KEY=your-read-key
+COSMIC_PEOPLE_OBJECT_TYPE=people
+```
+
+3. Restart the dev server after changing environment variables.
+
+If Cosmic is not configured or unavailable, the page automatically falls back to local data in `app/data/Team.ts`.
+
+Supported metadata keys for each person object include:
+
+- `name` or object `title`
+- `role` / `position` / `job_title`
+- `email`
+- `blurb` / `bio` / `description`
+- `imageUrl` / `image_url` / image-style objects (`image`, `photo`, `avatar`)
+- `position_category` / `positionCategory` / `section` / `team_section` / `teamSection` / `department` / `group` for section grouping
+
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
