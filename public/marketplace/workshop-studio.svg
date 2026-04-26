@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Workshop studio illustration</title>
+  <desc id="desc">Stylized maker studio with tools, shelves, and prototypes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c2248"/>
+      <stop offset="100%" stop-color="#5f6bb0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f6d28a"/>
+      <stop offset="100%" stop-color="#f6a05c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <rect x="90" y="150" width="720" height="900" rx="30" fill="#0f1536" stroke="#f4d897" stroke-width="8"/>
+
+  <g transform="translate(130 220)">
+    <rect width="640" height="150" rx="20" fill="url(#panel)"/>
+    <rect y="200" width="640" height="150" rx="20" fill="#d86c60"/>
+    <rect y="400" width="640" height="150" rx="20" fill="#4f8fb4"/>
+    <rect y="600" width="640" height="150" rx="20" fill="#7bb378"/>
+  </g>
+
+  <g fill="#0f1536cc" transform="translate(150 255)">
+    <rect x="20" y="35" width="110" height="80" rx="10"/>
+    <circle cx="230" cy="75" r="40"/>
+    <path d="M340,110 L420,30 L500,110" stroke="#0f1536" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <rect x="510" y="32" width="95" height="86" rx="12"/>
+
+    <path d="M40,245 L120,165 L200,245" stroke="#0f1536" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <rect x="235" y="197" width="130" height="90" rx="10"/>
+    <circle cx="470" cy="240" r="42"/>
+    <rect x="540" y="192" width="60" height="95" rx="10"/>
+
+    <circle cx="80" cy="455" r="34"/>
+    <rect x="150" y="405" width="120" height="92" rx="10"/>
+    <path d="M340,500 C390,420 440,420 490,500" stroke="#0f1536" stroke-width="22" fill="none" stroke-linecap="round"/>
+    <rect x="530" y="410" width="80" height="80" rx="10"/>
+
+    <rect x="18" y="618" width="160" height="96" rx="12"/>
+    <circle cx="295" cy="666" r="42"/>
+    <rect x="390" y="620" width="85" height="90" rx="12"/>
+    <rect x="520" y="620" width="92" height="90" rx="12"/>
+  </g>
+
+  <text x="145" y="1088" fill="#f6ddb4" font-size="44" font-family="Verdana, sans-serif" font-weight="700">BUILD - TEST - SELL</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Street market illustration</title>
+  <desc id="desc">Colorful stylized market stand with awnings and produce bins.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10284f"/>
+      <stop offset="50%" stop-color="#1d4a7d"/>
+      <stop offset="100%" stop-color="#ffb65a"/>
+    </linearGradient>
+    <linearGradient id="canopy" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#fef4d0"/>
+      <stop offset="50%" stop-color="#f58c42"/>
+      <stop offset="100%" stop-color="#d74d35"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <circle cx="130" cy="190" r="120" fill="#ffffff22"/>
+  <circle cx="760" cy="280" r="180" fill="#ffffff1e"/>
+  <rect x="100" y="340" width="700" height="520" rx="24" fill="#0f1f3f" stroke="#f7d287" stroke-width="8"/>
+  <rect x="100" y="285" width="700" height="90" rx="18" fill="url(#canopy)"/>
+  <g fill="#f9f0de">
+    <rect x="145" y="380" width="110" height="38" rx="8"/>
+    <rect x="285" y="380" width="110" height="38" rx="8"/>
+    <rect x="425" y="380" width="110" height="38" rx="8"/>
+    <rect x="565" y="380" width="110" height="38" rx="8"/>
+  </g>
+  <g>
+    <rect x="150" y="490" width="250" height="145" rx="16" fill="#fc9f47"/>
+    <rect x="500" y="490" width="250" height="145" rx="16" fill="#69bb7f"/>
+    <rect x="150" y="665" width="250" height="145" rx="16" fill="#e26d5f"/>
+    <rect x="500" y="665" width="250" height="145" rx="16" fill="#82a9de"/>
+  </g>
+  <g fill="#0f1f3fcc">
+    <circle cx="230" cy="555" r="25"/>
+    <circle cx="315" cy="555" r="18"/>
+    <circle cx="570" cy="555" r="20"/>
+    <circle cx="645" cy="555" r="24"/>
+    <circle cx="230" cy="730" r="22"/>
+    <circle cx="320" cy="730" r="16"/>
+    <circle cx="580" cy="730" r="22"/>
+    <circle cx="660" cy="730" r="15"/>
+  </g>
+  <rect x="100" y="900" width="700" height="190" rx="24" fill="#0f1f3fe6"/>
+  <text x="145" y="990" fill="#ffe5ab" font-size="60" font-family="Verdana, sans-serif" font-weight="700">MARKET</text>
+  <text x="145" y="1045" fill="#fef4d0" font-size="34" font-family="Verdana, sans-serif">Locally grown. Youth led.</text>
+</svg>

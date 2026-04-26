@@ -48,6 +48,9 @@ export default function Footer() {
           <Link href="/contact" className="hover:text-yep-yellow transition">
             Contact
           </Link>
+          <Link href="/marketplace" className="hover:text-yep-yellow transition">
+            Marketplace
+          </Link>
           <Link href="/team" className="hover:text-yep-yellow transition">
             Our Team
           </Link>

@@ -22,7 +22,9 @@ export default function Home() {
               Our Programs
             </h1>
             <p className="mt-2 max-w-xl text-sm text-yep-black/80 md:text-base">
-              Text about what programs are offered and for who go here.
+              From first-time founders to returning student entrepreneurs, YEP
+              programs help participants build real ventures with mentorship,
+              teamwork, and hands-on learning.
             </p>
           </div>
           <a

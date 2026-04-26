@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Community kitchen illustration</title>
+  <desc id="desc">Stylized kitchen scene with pots, herbs, and recipe cards.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f2f2f"/>
+      <stop offset="100%" stop-color="#1f6060"/>
+    </linearGradient>
+    <linearGradient id="shelf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f7ca7f"/>
+      <stop offset="100%" stop-color="#ed9f63"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <circle cx="750" cy="190" r="180" fill="#ffffff1a"/>
+  <circle cx="140" cy="220" r="120" fill="#ffffff14"/>
+
+  <rect x="105" y="215" width="690" height="740" rx="28" fill="#123838" stroke="#f6d99f" stroke-width="8"/>
+  <rect x="130" y="310" width="640" height="34" rx="10" fill="url(#shelf)"/>
+  <rect x="130" y="470" width="640" height="34" rx="10" fill="url(#shelf)"/>
+  <rect x="130" y="630" width="640" height="34" rx="10" fill="url(#shelf)"/>
+
+  <g>
+    <rect x="160" y="250" width="120" height="52" rx="10" fill="#f6ebd5"/>
+    <rect x="300" y="235" width="90" height="66" rx="10" fill="#e26e59"/>
+    <rect x="415" y="220" width="100" height="80" rx="10" fill="#79b8c4"/>
+    <rect x="545" y="242" width="110" height="60" rx="10" fill="#97ca7f"/>
+
+    <circle cx="210" cy="425" r="45" fill="#f39f65"/>
+    <circle cx="330" cy="425" r="45" fill="#7fbfd7"/>
+    <circle cx="450" cy="425" r="45" fill="#e87767"/>
+    <circle cx="570" cy="425" r="45" fill="#f0cf76"/>
+
+    <rect x="165" y="550" width="130" height="70" rx="16" fill="#8dc57d"/>
+    <rect x="335" y="545" width="130" height="80" rx="16" fill="#f3bf6a"/>
+    <rect x="505" y="550" width="130" height="70" rx="16" fill="#7aaad1"/>
+
+    <rect x="190" y="705" width="140" height="190" rx="18" fill="#f6ebd5"/>
+    <rect x="380" y="725" width="140" height="170" rx="18" fill="#df6f59"/>
+    <rect x="570" y="690" width="140" height="205" rx="18" fill="#88c183"/>
+  </g>
+
+  <text x="145" y="1075" fill="#ffe8b8" font-size="50" font-family="Verdana, sans-serif" font-weight="700">COMMUNITY KITCHEN</text>
+</svg>

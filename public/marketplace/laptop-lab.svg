@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Laptop lab illustration</title>
+  <desc id="desc">Stylized startup workspace with laptop, charts, and sticky notes.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f1b95a"/>
+      <stop offset="100%" stop-color="#e37f55"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a2f63"/>
+      <stop offset="100%" stop-color="#0e1b3c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="1200" fill="url(#bg)"/>
+  <rect x="0" y="770" width="900" height="430" fill="url(#desk)"/>
+
+  <rect x="160" y="210" width="580" height="390" rx="24" fill="#102a58" stroke="#f8e2b0" stroke-width="8"/>
+  <rect x="200" y="250" width="500" height="310" rx="16" fill="#f7f0dd"/>
+
+  <g fill="#243f7d" transform="translate(235 295)">
+    <rect x="0" y="160" width="410" height="18" rx="9"/>
+    <rect x="0" y="198" width="330" height="18" rx="9"/>
+    <rect x="0" y="236" width="365" height="18" rx="9"/>
+    <path d="M20,130 C80,20 190,20 250,100 L340,20 L392,60" stroke="#243f7d" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <rect x="120" y="630" width="660" height="120" rx="25" fill="#122654"/>
+  <rect x="220" y="650" width="460" height="22" rx="11" fill="#f1b95a"/>
+  <rect x="290" y="690" width="320" height="26" rx="13" fill="#f7f0dd"/>
+
+  <g>
+    <rect x="110" y="185" width="130" height="150" rx="12" fill="#8bc2ff"/>
+    <rect x="660" y="140" width="130" height="150" rx="12" fill="#f8d76a"/>
+    <rect x="700" y="350" width="120" height="130" rx="12" fill="#86cf98"/>
+  </g>
+
+  <g fill="#0f1f42cc">
+    <circle cx="175" cy="246" r="26"/>
+    <rect x="685" y="190" width="80" height="22" rx="10"/>
+    <path d="M726,380 L772,436" stroke="#0f1f42" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <text x="130" y="1135" fill="#ffe7b8" font-size="48" font-family="Verdana, sans-serif" font-weight="700">IDEA TO IMPACT</text>
+</svg>
