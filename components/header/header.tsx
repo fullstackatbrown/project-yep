@@ -16,6 +16,7 @@ export default function Header() {
           <Link href="/team">OUR TEAM</Link>
           <Link href="/apply">APPLY</Link>
           <Link href="/programs">PROGRAMS</Link>
+          <Link href="/contact">CONTACT US</Link>
         </nav>
       </div>
 
